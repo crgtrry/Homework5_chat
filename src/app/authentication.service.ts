@@ -16,6 +16,7 @@ export class AuthenticationService {
    }
 
    public login(email: string, password: string): Observable<boolean> {
+     // todo NOT THE way to do authentication but it is my authentication service nonetheless.
      if ( email === 'chandlergegg@gmail.com' && password === 'csc436!') {
        return Observable.of(true);
      }
