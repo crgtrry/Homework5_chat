@@ -28,7 +28,7 @@ export class AuthenticationService {
    }
 
    public isUser(name: string): boolean {
-     if (this.user.getUser() === name) {
+    if (this.user != null && this.user.getUser() === name) {
        return true;
      }
      return false;

@@ -9,8 +9,8 @@ import { ChatauthGuard } from './guards/chatauth.guard';
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: '/login' },
   { path: 'login', component: LoginComponent },
-  { path: 'dashboard', component: DashboardComponent, canActivate: [ChatauthGuard] },
-  // { path: 'chat', component: ChatPageComponent },
+  { path: 'dashboard', component: DashboardComponent},
+  { path: 'chat', component: ChatPageComponent, canActivate: [ChatauthGuard] },
   { path: '**', redirectTo: '/login'}
 ];
 
