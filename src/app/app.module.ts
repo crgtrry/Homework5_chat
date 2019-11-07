@@ -9,6 +9,8 @@ import { ThreadsService } from './thread/threads.service';
 import { MessagesService } from './message/messages.service';
 import { AuthenticationService } from './authentication.service';
 
+import { ChatauthGuard } from './guards/chatauth.guard';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ChatNavBarComponent } from './chat-nav-bar/chat-nav-bar.component';
@@ -42,7 +44,11 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     HttpClientModule
   ],
   providers: [
-    MessagesService, ThreadsService, UsersService, AuthenticationService
+    MessagesService,
+    ThreadsService,
+    UsersService,
+    AuthenticationService,
+    ChatauthGuard
   ],
   bootstrap: [AppComponent]
 })
