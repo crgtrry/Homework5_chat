@@ -16,7 +16,10 @@ export class AuthenticationService {
    }
 
    public login(email: string, password: string): Observable<boolean> {
-     return Observable.of(true);
+     if ( email === 'chandlergegg@gmail.com' && password === 'csc436!') {
+       return Observable.of(true);
+     }
+     return Observable.of(false)
    }
 
    public logout(): void {
