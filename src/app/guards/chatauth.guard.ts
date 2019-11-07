@@ -17,6 +17,8 @@ export class ChatauthGuard implements CanActivate {
   canActivate(
     next: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean> {
+      // todo not sure about instructions ... removed authentication but still have login.
+      // todo  Looks like no one is authorized because of the guard.  I'm just redirecting them to login
     if (this.auth.isUser('chandlergegg@gmail.com')) {
       return Observable.of(true);
     }
