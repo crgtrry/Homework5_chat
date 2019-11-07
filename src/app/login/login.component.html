@@ -1,1 +1,14 @@
-<p>login works!</p>
+<div>
+  <div>
+    <h2>Login</h2>
+    <form [formGroup]="loginForm" (submit)="submit()" novalidate>
+      <div>
+        <input type="email" id="email-input" placeholder="Enter Email" formControlName="email">
+      </div>
+      <div>
+          <input type="password" id="password-input" placeholder="Enter Password" formControlName="password">
+      </div>
+      <button type="submit" class="btn" [disabled]="!loginForm.valid">Submit</button>
+    </form>
+  </div>
+</div>
