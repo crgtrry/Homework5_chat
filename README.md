@@ -1,26 +1,26 @@
-# Chat
+# Homework 5 CHAT
+Github location: https://github.com/crgtrry/CSC436-Homework5_chat
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.4.
+## Todo
+  Completed all tasks, but need CSS/formatting work on login page and icon for link to chat page and back.
+  No extra credit tasks were accomplished
 
-## Development server
+## Project
+To run project:
+In Dist directory run: http-server dist/chat
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Accepts any login but only provided teacher login will get access chat window.  All other logins cant access per instructions
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Challenges
+Lots of pieces and trial and error.  Getting the chat to work was a challeng
+Estimated time on project: 10.5 hours
 
 ## Build
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.4.
+
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
 ## Further help
 
